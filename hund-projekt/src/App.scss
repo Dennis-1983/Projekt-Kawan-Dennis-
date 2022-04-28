@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #577590;
+  --color-primary-light: #b5c5d282;
+  --color-highlight: #f3722c;
+  --color-highlight-active: #d7530c;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  .video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 10px;
+  }
+}
+body {
+  .dogo {
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: azure;
+    font-family: fantasy;
+  }
+  .dogo-portal {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: azure;
+  }
+  .homePage {
+    position: absolute;
+   
+  }
+  .container{
+position: relative;
+margin-top: -60rem;
+  }
+  
+
+  .butInfo {
+    height: 30rem;
+    background-color: var(--color-primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    box-shadow: -30px 10px 60px 0px rgba(0, 0, 0, 0.737);
+
+    .but-rassen {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 35rem;
+     
+    }
+  }
+}
