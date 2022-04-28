@@ -8,18 +8,15 @@ export const Link = () => {
         <li>
           <NavLink to="/">Welcome</NavLink>
         </li>
+
         <li>
-          <NavLink
-            to="/infopage"
-            style={(isActive) => ({
-              color: isActive ? 'green' : 'blue',
-            })}
-          >
-            Info page
-          </NavLink>
+          <NavLink to="/infopage">Info page</NavLink>
         </li>
         <li>
-          <NavLink to="link">Link</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
+        </li>
+        <li>
+          <NavLink to="/viewsFile">Data</NavLink>
         </li>
       </ul>
     </nav>

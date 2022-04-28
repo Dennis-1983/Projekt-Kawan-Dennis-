@@ -36,13 +36,11 @@ body {
   }
   .homePage {
     position: absolute;
-   
   }
-  .container{
-position: relative;
-margin-top: -60rem;
+  .container {
+    position: relative;
+    margin-top: -60rem;
   }
-  
 
   .butInfo {
     height: 30rem;
@@ -59,7 +57,37 @@ margin-top: -60rem;
       flex-direction: column;
       gap: 2rem;
       width: 35rem;
-     
     }
   }
+}
+.about-info {
+  color: rgb(16, 15, 15);
+  font-size: 5rem;
+  background-color: var(--color-primary-light);
+}
+.contact {
+  padding: 15px;
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  background-color: var(--color-primary-light);
+
+  .contact ul li {
+    list-style: none;
+    color: #d7530c;
+  }
+}
+.data {
+  padding: 15px;
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  background-color: var(--color-primary-light);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  background-color: var(--color-primary-light);
 }

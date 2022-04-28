@@ -10,21 +10,20 @@ import { Outlet } from 'react-router-dom';
 import { Home } from './components/Home';
 import { InfoPage } from './components/InfoPage';
 import { Link } from './components/Link';
+import { Title } from './components/Title';
+import data from './data/db.js';
+import Card from './components/Card'
 
 function App() {
+  console.log(data)
   return (
     <div className="homePage">
       <Link />
       <Main />
-
       <div className="container">
-        <h1 className="dogo">Dogo Kleinanzeigen </h1>
-        <p className="dogo-portal">
-          Dogo das Portal für ihr neues Familienmitglied
-        </p>
-
-        <Home />
-        <InfoPage />
+        <Title />
+        <Outlet />
+     
       </div>
     </div>
   );

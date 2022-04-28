@@ -1,20 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import App from './App';
 import { InfoPage } from './components/InfoPage';
 import { Home } from './components/Home';
-import {Link} from './components/Link';
+import { Contact } from './components/Contact';
+import { ViewsFile } from './components/ViewsFile';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-   
       <Routes>
-  
         <Route path="/" element={<App />}>
-         <Route path="/infopage" element={<InfoPage />} />
-          <Route path="/link" element={<Link />} />
+          <Route index element={<Home />} />
+          <Route path="/infopage" element={<InfoPage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/viewsFile" element={<ViewsFile />} />
         </Route>
       </Routes>
     </BrowserRouter>
