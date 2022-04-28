@@ -18,10 +18,11 @@ export const InfoPage = () => {
 
   return (
     <div>
-          <p>About Us:</p>
+          
       <p className="about-info">
+      About Us:<br/>
         Bei uns finden sie ihren passenden Begleiter fürs Leben. Wir stehen
-        ihnen jederzeit bei Fragen zur Verfügung
+        ihnen jederzeit bei Fragen zur Verfügung.
       </p>
 
       {/* <ul>

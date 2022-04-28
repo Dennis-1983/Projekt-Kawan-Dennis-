@@ -12,20 +12,25 @@ import { InfoPage } from './components/InfoPage';
 import { Link } from './components/Link';
 import { Title } from './components/Title';
 import data from './data/db.js';
-import Card from './components/Card'
+import Card from './components/Card';
+import {Footer} from './components/Footer';
 
 function App() {
-  console.log(data)
+  console.log(data);
   return (
-    <div className="homePage">
+    
+    <div className=" homePage">
       <Link />
       <Main />
       <div className="container">
         <Title />
         <Outlet />
-     
+            <Footer />
       </div>
+      
+ 
     </div>
+ 
   );
 }
 

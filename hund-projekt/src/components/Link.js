@@ -3,22 +3,23 @@ import { NavLink } from 'react-router-dom';
 
 export const Link = () => {
   return (
-    <nav>
+
+    <nav className="navbar">
+     
       <ul>
-        <li>
-          <NavLink to="/">Welcome</NavLink>
+        <li className="nav-li">
+          <NavLink className="navLink" to="/">Welcome</NavLink>
         </li>
 
         <li>
-          <NavLink to="/infopage">Info page</NavLink>
+          <NavLink className="navLink" to="/infopage">Info page</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink className="navLink" to="/contact">Contact Us</NavLink>
         </li>
-        <li>
-          <NavLink to="/viewsFile">Data</NavLink>
-        </li>
+        
       </ul>
     </nav>
+  
   );
 };
