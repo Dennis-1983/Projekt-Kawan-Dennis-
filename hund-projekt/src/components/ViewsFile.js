@@ -4,7 +4,13 @@ import { useState } from 'react';
 export const ViewsFile = () => {
   const [data, setdata] = useState([]);
   const hunde = data.map((data, index) => {
-    data;
+  
+    return(
+      <>
+       data;
+       </>
+    )
+   
   });
   return (
     <div className="data">

@@ -31,17 +31,28 @@ export const Home = () => {
               {' '}
               mittlegroe Rassen
             </Button>{' '}
-            <Button variant="success" onClick={() => setSwitchh(false)}>Große Rassen</Button>{' '}
-          </Form>
-          <Form className="but-rassen">
-            <Button variant="primary">Welpen futter</Button>{' '}
-            <Button variant="secondary"> Adoult futter</Button>{' '}
-            <Button variant="success">Senior futter</Button>{' '}
+            <Button variant="success" onClick={() => setSwitchh(false)}>
+              Große Rassen
+            </Button>{' '}
           </Form>
         </div>
       ) : (
         hundenCard
       )}
+      <Form className="but-rassen">
+        <a
+          href="https://www.wolfsblut.com/suche?searchPhrase=Welpen%20futter"
+          target="_blanck"
+        >
+          <Button variant="primary">Welpen futter</Button>{' '}
+        </a>
+        <a href="https://www.wolfsblut.com/adultfutter.html" target="_blanck">
+          <Button variant="secondary"> Adoult futter</Button>{' '}
+        </a>
+        <a href="https://www.wolfsblut.com/seniorfutter.html" target="_blanck">
+          <Button variant="success">Senior futter</Button>{' '}
+        </a>
+      </Form>
     </>
   );
 };
