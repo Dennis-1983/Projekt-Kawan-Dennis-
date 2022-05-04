@@ -1,0 +1,84 @@
+// Ein neues Dokument anlegen 
+
+db.Hunderassen.insertMany(
+    [
+    {
+        rasse:"Australian Shepherd.",
+        farbe:"Blue-Merle",
+        alter:"0.5",
+        gender:"Female",
+        ort: "Frankfurt/Rhein",
+        preis:3800
+},
+{
+        rasse:"American Pit Bull Terrier",
+        farbe:"Brindel",
+        alter:"0.3",
+        gender:"Male",
+        ort: "Magdeburg",
+        preis:2500
+},
+{
+        rasse:"American Cocker Spaniel",
+        farbe:"Rot-Braun",
+        alter:"0.2",
+        gender:"Female",
+        ort: "Bonn",
+        preis:4000
+},
+{
+        rasse:"Yorkshire Terrier",
+        farbe:"Rot-Braun",
+        alter:"0.2",
+        gender:"Female",
+        ort: "Köln",
+        preis:1200
+},
+{
+        rasse:"Französische Bulldogge",
+        farbe:"Blue",
+        alter:"0.2",
+        gender:"Female",
+        ort: "Düsseldorf",
+        preis:4000
+},
+{
+        rasse:"Mops",
+        farbe:"Schwarz",
+        alter:"0.2",
+        gender:"Female",
+        ort: "Trier",
+        preis:2000
+}
+    ]
+)
+
+// Alle Dokumente aus der Collection anzeigen
+db.products.find();
+
+// Ergebnisse Formartieren 
+db.Hunderassen.find().pretty();
+
+// Ergebnisse filtern beispiel wir filtern die rasse Mops
+db.Hunderassen.find({name:Mops})
+
+// Ergebnisse sortieren von a bis z
+db.Hunderassen.find().sort({name 1})
+
+// Ergebnisse sortieren von z bis a
+db.Hunderassen.find().sort({name -1})
+
+//Dokumente updaten
+db.Hunderassen.updateOne({name:})
+
+// Dokumente löschen
+db.Hunderassen.deleteOne({ name: "denn namen wo ich löschen möchte"})
+
+// Mehrer Dokumente löschen 
+db.Hunderassen.deletemany({category:"die category wo ich löschen möchte" })
+
+
+
+
+
+
