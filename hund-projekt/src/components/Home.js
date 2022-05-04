@@ -20,7 +20,6 @@ export const Home = () => {
     );
   });
   return (
-    /* test  */
     <>
       {switchh ? (
         <div className="butInfo">
@@ -28,8 +27,11 @@ export const Home = () => {
             <Button variant="primary" onClick={() => setSwitchh(false)}>
               Kleine Rassen
             </Button>{' '}
-            <Button variant="secondary"> mittlegroe Rassen</Button>{' '}
-            <Button variant="success">Große Rassen</Button>{' '}
+            <Button variant="secondary" onClick={() => setSwitchh(false)}>
+              {' '}
+              mittlegroe Rassen
+            </Button>{' '}
+            <Button variant="success" onClick={() => setSwitchh(false)}>Große Rassen</Button>{' '}
           </Form>
           <Form className="but-rassen">
             <Button variant="primary">Welpen futter</Button>{' '}

@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #577590;
+  --color-primary-light: #b5c5d282;
+  --color-highlight: #f3722c;
+  --color-highlight-active: #d7530c;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  .video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 10px;
+  }
+}
+body {
+  .dogo {
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: azure;
+    font-family: fantasy;
+  }
+  .dogo-portal {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: azure;
+  }
+  .homePage {
+    position: absolute;
+  }
+  .container {
+    position: relative;
+    margin-top: -65rem;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 45px;
+    margin-left: 17rem;
+  }
+
+  .navLink {
+    color: #e9e9e9;
+    text-decoration: none;
+    background-color: #ce4e09;
+    padding: 25px;
+    border-radius: 5px;
+    width: 155px;
+  }
+  .navLink:active {
+    background-color: #e9e9e9;
+    color: #ce4e09;
+  }
+
+  .butInfo {
+    height: 30rem;
+    background-color: var(--color-primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    box-shadow: -30px 10px 60px 0px rgba(0, 0, 0, 0.737);
+
+    .but-rassen {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 35rem;
+    }
+  }
+}
+.about-info {
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  height: 350px;
+  padding: 45px;
+  background-color: var(--color-primary-light);
+}
+.contact {
+  padding: 15px;
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  background-color: var(--color-primary-light);
+
+  .contact ul li {
+    list-style: none;
+    color: #d7530c;
+  }
+}
+.data {
+  padding: 15px;
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  background-color: var(--color-primary-light);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: rgb(16, 15, 15);
+  font-size: 3rem;
+  background-color: var(--color-primary-light);
+}
+.fo-log {
+  padding: 15px;
+  margin-top: 25px;
+  background-color: #ce4e09;
+  width:100%;
+  height: 150px;
+ color: #e9e9e9; 
+
+ 
+  
+}
