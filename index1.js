@@ -39,7 +39,17 @@ app.post("/addUsers", async (req, res) => {
   }
 });
 
-
+app.delete("/users/:dog", async (req, res) => {
+  try {
+    const dog = req.params.dog;
+    console.log(dog);
+    await User.findOneAndDelete({rasse:dog})
+    const users = await User.find().exec();
+    return res.json(users);
+  } catch (error) {
+    return res.json({ error: error.message });
+  }
+});
 
 
 
